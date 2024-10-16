@@ -44,10 +44,10 @@
         lower_layer {
             display-name = "Lower";
             bindings = <
-&kp ESC    &kp N1                &kp N2                &kp N3             &kp N4           &kp N5        &kp N6     &kp N7         &kp N8       &kp N9     &kp N0  &kp BACKSPACE
-&kp LCTRL  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_MUTE    &kp LEFT   &kp DOWN       &kp UP       &kp RIGHT  &trans  &kp DELETE
-&kp LSHFT  &trans                &trans                &trans             &trans           &trans        &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &trans  &trans
-                                                       &kp LGUI           &trans           &kp RET       &kp SPACE  &trans         &kp ESC
+&kp ESC    &kp N1          &kp N2      &kp N3                &kp N4                &kp N5              &kp N6     &kp N7         &kp N8       &kp N9     &kp N0  &kp BACKSPACE
+&kp LCTRL  &kp C_PREVIOUS  &kp C_NEXT  &kp C_VOLUME_UP       &kp C_VOLUME_DOWN     &kp C_MUTE          &kp LEFT   &kp DOWN       &kp UP       &kp RIGHT  &trans  &kp DELETE
+&kp LSHFT  &trans          &trans      &kp C_BRIGHTNESS_INC  &kp C_BRIGHTNESS_DEC  &kp C_PLAY_PAUSE    &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &trans  &trans
+                                       &kp LGUI              &trans                &kp RET             &kp SPACE  &trans         &kp ESC
             >;
         };
 
