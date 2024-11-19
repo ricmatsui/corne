@@ -18,6 +18,8 @@
     require-prior-idle-ms = <250>;
 };
 
+&sk { quick-release; };
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -34,20 +36,20 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp TAB           &kp Q             &kp W        &kp E           &kp R           &kp T      &kp Y      &kp U            &kp I            &kp O                &kp P                 &kp BSPC
-&kp LEFT_SHIFT    &mt LEFT_SHIFT A  &mt LCTRL S  &mt LEFT_ALT D  &mt LEFT_GUI F  &kp G      &kp H      &mt RIGHT_GUI J  &mt RIGHT_ALT K  &mt RIGHT_CONTROL L  &mt RSHIFT SEMICOLON  &kp SQT
-&kp LEFT_CONTROL  &kp Z             &kp X        &kp C           &kp V           &kp B      &kp N      &kp M            &kp COMMA        &kp DOT              &kp FSLH              &kp LEFT_ALT
-                                                 &kp LGUI        &mo 1           &kp RET    &kp SPACE  &mo 2            &kp ESC
+&kp TAB           &kp Q  &kp W  &kp E     &kp R  &kp T      &kp Y      &kp U  &kp I      &kp O    &kp P          &kp BSPC
+&kp LEFT_SHIFT    &kp A  &kp S  &kp D     &kp F  &kp G      &kp H      &kp J  &kp K      &kp L    &kp SEMICOLON  &kp SQT
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp C     &kp V  &kp B      &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH       &kp LEFT_ALT
+                                &kp LGUI  &mo 1  &kp RET    &kp SPACE  &mo 2  &kp ESC
             >;
         };
 
         lower_layer {
             display-name = "Lower";
             bindings = <
-&kp ESC           &kp N1          &kp N2      &kp N3                &kp N4                &kp N5              &kp N6     &kp N7         &kp N8       &kp N9     &kp N0  &kp BACKSPACE
-&kp LEFT_SHIFT    &kp C_PREVIOUS  &kp C_NEXT  &kp C_VOLUME_UP       &kp C_VOLUME_DOWN     &kp C_MUTE          &kp LEFT   &kp DOWN       &kp UP       &kp RIGHT  &trans  &kp DELETE
-&kp LEFT_CONTROL  &trans          &trans      &kp C_BRIGHTNESS_INC  &kp C_BRIGHTNESS_DEC  &kp C_PLAY_PAUSE    &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &trans  &kp LEFT_ALT
-                                              &kp LGUI              &trans                &kp RET             &kp SPACE  &trans         &kp ESC
+&kp ESC           &kp N1          &kp N2            &kp N3             &kp N4           &kp N5              &kp N6     &kp N7         &kp N8       &kp N9     &kp N0                &kp BACKSPACE
+&kp LEFT_SHIFT    &sk LEFT_SHIFT  &sk LEFT_CONTROL  &sk LEFT_ALT       &sk LEFT_GUI     &kp C_MUTE          &kp LEFT   &kp DOWN       &kp UP       &kp RIGHT  &kp C_BRIGHTNESS_INC  &kp DELETE
+&kp LEFT_CONTROL  &kp C_PREVIOUS  &kp C_NEXT        &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_PLAY_PAUSE    &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP  &kp END    &kp C_BRIGHTNESS_DEC  &kp LEFT_ALT
+                                                    &kp LGUI           &trans           &kp RET             &kp SPACE  &trans         &kp ESC
             >;
         };
 
