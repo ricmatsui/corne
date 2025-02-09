@@ -23,6 +23,10 @@
 
 &sk { quick-release; };
 
+&mmv { acceleration-exponent = <2>; };
+
+&msc { acceleration-exponent = <2>; };
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -70,10 +74,10 @@
         combo_layer {
             display-name = "Combo";
             bindings = <
-&kp GRAVE         &kp F1  &kp F2     &kp F3     &kp F4     &kp F5     &kp F6     &kp F7          &kp F8          &kp F9           &kp F10     &kp BSPC
-&kp LEFT_SHIFT    &trans  &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans     &trans     &msc SCRL_DOWN  &mmv MOVE_UP    &msc SCRL_UP     &bt BT_PRV  &bt BT_NXT
-&kp LEFT_CONTROL  &trans  &trans     &trans     &trans     &trans     &trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans      &bt BT_CLR
-                                     &kp LGUI   &trans     &kp RET    &kp SPACE  &trans          &kp ESC
+&kp GRAVE         &kp F1  &kp F2     &kp F3     &kp F4     &kp F5     &kp F6          &kp F7          &kp F8        &kp F9           &kp F10     &kp BSPC
+&kp LEFT_SHIFT    &trans  &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &bt BT_PRV  &bt BT_NXT
+&kp LEFT_CONTROL  &trans  &trans     &trans     &trans     &trans     &trans          &msc SCRL_DOWN  &msc SCRL_UP  &trans           &trans      &bt BT_CLR
+                                     &kp LGUI   &trans     &kp RET    &kp SPACE       &trans          &kp ESC
             >;
         };
 
