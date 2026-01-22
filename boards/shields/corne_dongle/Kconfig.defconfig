@@ -1,0 +1,23 @@
+if SHIELD_CORNE_DONGLE
+
+config ZMK_KEYBOARD_NAME
+    default "Corne"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+config ZMK_SPLIT
+    default y
+
+config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
+    default 2
+
+# Set to ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS + number of profiles
+config BT_MAX_CONN
+    default 7
+
+# Set to same as BT_MAX_CONN
+config BT_MAX_PAIRED
+    default 7
+
+endif
