@@ -24,5 +24,6 @@ include:
 
   - board: seeeduino_xiao_ble
     shield: corne_dongle dongle_screen
+    cmake-args: -DCONFIG_DONGLE_SCREEN_DEFAULT_BRIGHTNESS=1
   - board: seeeduino_xiao_ble
     shield: settings_reset
