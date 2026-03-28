@@ -1,0 +1,136 @@
+layout: {zmk_keyboard: corne}
+layers:
+  Base: [TAB, Q, W, E, R, T, Y, U, I, O, P, BSPC, LEFT SHIFT, A, S, D, F, G, H, J, K, L, ;, '''', LEFT CONTROL, Z, X, C, V, B, N, M, ',', ., /, LEFT ALT, LGUI, Lower,
+    RET, SPACE, Raise, ESC]
+  Lower:
+  - ESC
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - BACKSPACE
+  - LEFT SHIFT
+  - {t: LEFT SHIFT, h: sticky}
+  - {t: LEFT CONTROL, h: sticky}
+  - {t: LEFT ALT, h: sticky}
+  - {t: LEFT GUI, h: sticky}
+  - F22
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
+  - BRIGHTNESS INC
+  - DELETE
+  - LEFT CONTROL
+  - PREVIOUS
+  - NEXT
+  - VOLUME DOWN
+  - VOLUME UP
+  - PLAY PAUSE
+  - HOME
+  - PAGE DOWN
+  - PAGE UP
+  - END
+  - BRIGHTNESS DEC
+  - LEFT ALT
+  - LGUI
+  - {type: held}
+  - RET
+  - SPACE
+  - {t: ▽, type: trans}
+  - ESC
+  Raise:
+  - '`'
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - ^
+  - '&'
+  - KP MULTIPLY
+  - (
+  - )
+  - BSPC
+  - LEFT SHIFT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - GLOBE
+  - CAPSLOCK
+  - {t: ▽, type: trans}
+  - '-'
+  - '='
+  - '['
+  - ']'
+  - \
+  - '~'
+  - LEFT CONTROL
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - _
+  - +
+  - '{'
+  - '}'
+  - '|'
+  - LEFT ALT
+  - LGUI
+  - {t: ▽, type: trans}
+  - Gui+RET
+  - SPACE
+  - {type: held}
+  - ESC
+  Combo:
+  - '`'
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - BSPC
+  - LEFT SHIFT
+  - {t: ▽, type: trans}
+  - '&mkp RCLK'
+  - '&mkp MCLK'
+  - '&mkp LCLK'
+  - {t: ▽, type: trans}
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_UP'
+  - '&mmv MOVE_RIGHT'
+  - BT PRV
+  - BT NXT
+  - LEFT CONTROL
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&msc SCRL_DOWN'
+  - '&msc SCRL_UP'
+  - {t: ▽, type: trans}
+  - OUT TOG
+  - BT CLR
+  - LGUI
+  - {type: held}
+  - RET
+  - SPACE
+  - {type: held}
+  - ESC
+combos:
+- p: [37, 40]
+  k: Combo
