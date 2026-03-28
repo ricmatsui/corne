@@ -123,7 +123,8 @@ path.combo {
     visibility: hidden;
 }
 /* End Tabler Icons Cleanup */
-</style>
+
+svg { background-color: white; }</style>
 <g transform="translate(30, 0)" class="layer-Base">
 <text x="0" y="28" class="label" id="Base">Base:</text>
 <g transform="translate(0, 56)">
@@ -918,4 +919,4 @@ path.combo {
 </a></g>
 </g>
 </g>
-</svg>
+<text x="870.0" y="1351.0" class="footer">Created with <a href="https://github.com/caksoylar/keymap-drawer">keymap-drawer</a></text></svg>
