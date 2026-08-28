@@ -89,7 +89,7 @@ layers:
   - {type: held}
   - ESC
   Combo:
-  - '`'
+  - '&triple_backtick'
   - F1
   - F2
   - F3
