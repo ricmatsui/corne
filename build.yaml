@@ -25,4 +25,9 @@ include:
   - board: seeeduino_xiao_ble
     shield: corne_dongle dongle_screen
   - board: seeeduino_xiao_ble
+    shield: corne_dongle dongle_screen
+    snippet: zmk-usb-logging
+    artifact-name: corne_dongle_logging
+    cmake-args: -DCONFIG_THREAD_NAME=y -DCONFIG_THREAD_ANALYZER=y -DCONFIG_THREAD_ANALYZER_USE_LOG=y -DCONFIG_THREAD_ANALYZER_AUTO=y -DCONFIG_THREAD_ANALYZER_AUTO_INTERVAL=60 -DCONFIG_HW_STACK_PROTECTION=y
+  - board: seeeduino_xiao_ble
     shield: settings_reset

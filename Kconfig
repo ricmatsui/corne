@@ -1,0 +1,4 @@
+config CORNE_DONGLE_UPTIME
+    bool "Show uptime on the dongle screen"
+    default y
+    depends on SHIELD_DONGLE_SCREEN && ZMK_DISPLAY
